@@ -38,7 +38,7 @@
 
 /* A frente do card usa os estilos que você já tem */
 .card-front {
-    background-color: #fff; /* Supondo que o fundo do seu event-card seja branco */
+   background-color: #fff; /* Supondo que o fundo do seu event-card seja branco */
     border: 1px solid #eee;
 }
 
@@ -75,4 +75,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.text-justify{
+    hyphens: auto; /* Permite a quebra de palavras */
+    text-align: left;
 }
