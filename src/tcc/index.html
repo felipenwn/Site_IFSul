@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/IV.ico" type="image/x-icon" />
+    <title>IFSul - TCC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/common/header.css">
+    <link rel="stylesheet" href="../../assets/css/common/style.css">
+    <link rel="stylesheet" href="../../assets/css/common/footer.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+    <script>
+        fetch('../header/index.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
+    <main>
+         <section id="home" class="main gradient-bg">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
+                            result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+          
+            <div class="background-overlay"></div>
+            <div class="container">
+                <div class="main-content">
+                    <h1>TCC - IFSul Passo Fundo</h1>
+                    <p>Conheça todos os artigos já defendidos pelos alunos da BCC e do TSI.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+<section id="tcc" class="py-5">
+      <div class="container">
+        <h2 class="section-title mb-3">Pesquisar TCC</h2>
+
+        <form id="tccForm" class="row g-1">
+            <div class="d-flex flex-wrap gap-3">
+                <div class="col-sm-1">
+                    <label for="periodo" class="form-label">Período letivo</label>
+                    <select id="periodo" class="form-select">
+                        <option value="">Todos</option>
+                        <!-- opções serão preenchidas via JS -->
+                    </select>
+                </div>
+                <div class="col-sm-3">
+                    <label class="form-label">Pesquise por palavras relacionadas</label>
+                    <input id="texto" class="form-control" type="text" >
+                </div>
+          </div>
+          <div class="col-sm-8">
+            <label class="form-label d-block">Ordenação</label>
+            <div class="d-flex flex-wrap gap-2">
+              <div class="form-check">
+                <input class="form-check-input order" type="checkbox" value="data_defesa DESC" id="ord1" checked>
+                <label class="form-check-label" for="ord1">Data da Defesa do TCC (DESC)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input order" type="checkbox" value="data_defesa" id="ord2" checked>
+                <label class="form-check-label" for="ord2">Data da Defesa do TCC (ASC)</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input order" type="checkbox" value="aluno" id="ord3" checked>
+                <label class="form-check-label" for="ord3">Nome do Aluno</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input order" type="checkbox" value="titulo" id="ord4" checked>
+                <label class="form-check-label" for="ord4">Titulo do TCC</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">
+              Consultar
+            </button>
+          </div>
+        </form>
+
+        <div id="tccResult" class="mt-4"></div>
+        <pre id="tccRaw" class="mt-3 bg-dark text-light p-3 rounded" style="max-height:420px; overflow:auto; display:none;">{}</pre>
+      </div>
+    </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-image">
+                        <img src="../../assets/img/default.png" alt="Entre em contato gato">
+                    </div>
+                    <div class="contact-text">
+                        <h2 class="section-title">Fale Conosco</h2>
+                        <div class="contact-info">
+                            <p><i class="bi bi-geo-alt-fill"></i> Est. Perimetral Leste, 150. Passo Fundo - RS</p>
+                            <p><i class="bi bi-envelope-fill"></i> pf-corac@ifsul.edu.br/p>
+                            <p><i class="bi bi-telephone-fill"></i> (54) 2024-0400</p>
+                        </div>
+
+                        <div class="footer-social">
+                            <a href="https://www.linkedin.com/school/ifsul-instituto-federal-sul-rio-grandense/posts/?feedView=all"
+                                target="_blank" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://www.instagram.com/congresso.ti/" target="_blank" class="social-icon"><i
+                                    class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/ifsulcampuspassofundo/?locale=pt_BR" target="_blank"
+                                class="social-icon"><i class="bi bi-facebook"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <div id="footer-placeholder"></div>
+        <script>
+            fetch('../footer/index.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+
+    </main>
+    <script src="../interactive-bubble.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+
+    <script>
+    (function () {
+        const ENDPOINT_BASE = 'https://painel.passofundo.ifsul.edu.br/ws';
+        const form = document.getElementById('tccForm');
+        const result = document.getElementById('tccResult');
+        const raw = document.getElementById('tccRaw');
+        const periodoSelect = document.getElementById('periodo');
+
+        function escapeHTML(s) {
+            return String(s ?? '').replace(/[&<>"']/g, c => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            }[c]));
+        }
+
+        function pickItems(obj) {
+            if (!obj || typeof obj !== 'object') return [];
+            if (Array.isArray(obj)) return obj;
+            if (obj.tcc && !Array.isArray(obj.tcc)) return [obj.tcc];
+            if (Array.isArray(obj.tcc)) return obj.tcc;
+            if (Array.isArray(obj.tccs)) return obj.tccs;
+            if (Array.isArray(obj.results)) return obj.results;
+            if (Array.isArray(obj.data)) return obj.data;
+            if (obj.result && Array.isArray(obj.result)) return obj.result;
+            for (const k of Object.keys(obj)) {
+                if (Array.isArray(obj[k])) return obj[k];
+            }
+            return [];
+        }
+
+        function render(obj) {
+            const items = Array.isArray(obj)
+                ? obj.map(x => x.tcc || x)
+                : (obj?.tcc ? [obj.tcc] :
+                   obj?.tccs || obj?.results || obj?.data || []);
+
+            result.innerHTML = '';
+
+            if (!items || items.length === 0) {
+                result.innerHTML = '<div class="alert alert-warning">Nenhum resultado encontrado.</div>';
+                return;
+            }
+
+            const acc = document.createElement('div');
+            acc.className = 'accordion accordion-flush';
+            acc.id = 'tccAccordion';
+
+            items.forEach((t, idx) => {
+                const id = `tcc-${escapeHTML(t.id ?? String(idx))}`;
+                const headerId = `hdr-${id}`;
+                const collapseId = `col-${id}`;
+
+                const aluno   = escapeHTML(t.aluno ?? '—');
+                const curso   = escapeHTML(t.curso ?? '');
+                const titulo  = escapeHTML(t.titulo ?? 'Sem título');
+                const data    = escapeHTML(t.data_defesa ?? '');
+                const periodo = escapeHTML(t.periodo_letivo ?? '');
+                const resumo  = escapeHTML(t.resumo ?? '');
+                const orientador  = escapeHTML(t.orientador ?? '');
+                const arquivo = t.arquivo ? String(t.arquivo) : '';
+
+                const item = document.createElement('div');
+                item.className = 'accordion-item mb-2 border rounded-3 shadow-sm';
+
+                item.innerHTML = `
+                    <h2 class="accordion-header" id="${headerId}">
+                        <button class="accordion-button collapsed" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#${collapseId}"
+                                aria-expanded="false" aria-controls="${collapseId}">
+                            <div class="w-100">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2">
+                                    <strong class="me-2">${titulo}</strong>
+                                </div>
+                                <small class="text-body-secondary">
+                                </small>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="${collapseId}" class="accordion-collapse collapse"
+                         aria-labelledby="${headerId}" data-bs-parent="#tccAccordion">
+                        <div class="accordion-body">
+                            <p>Aluno: ${aluno}</p>
+                            <p>Orientador: ${orientador ? '' + orientador : ''}</p>
+                            <p>Curso: ${curso ? '' + curso : ''}</p>
+                            <p>Data de Defesa: ${data ? '' + data : ''}</p>
+                            <p>Período Letivo: ${periodo ? '' + periodo : ''}</p>
+                            Resumo:${resumo
+                                ? `<p class="mb-3">${resumo}</p>`
+                                : '<p class="mb-3 text-muted">Sem resumo.</p>'}
+                            <div class="d-flex gap-2">
+                                ${arquivo
+                                    ? `<a href="${arquivo}" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                         <i class="bi bi-file-earmark-pdf"></i> Abrir PDF
+                                       </a>`
+                                    : `<button class="btn btn-sm btn-outline-secondary" disabled>
+                                         <i class="bi bi-file-earmark-x"></i> PDF indisponível
+                                       </button>`}
+                            </div>
+                        </div>
+                    </div>
+                `;
+
+                acc.appendChild(item);
+            });
+
+            const count = document.createElement('div');
+            count.className = 'mb-2';
+            count.innerHTML = `<span class="badge text-bg-secondary">${items.length}</span> resultado(s)`;
+
+            result.appendChild(count);
+            result.appendChild(acc);
+        }
+
+        async function callGet(params) {
+            result.innerHTML = '<div class="alert alert-info">Carregando…</div>';
+            raw.style.display = 'none';
+
+            try {
+                const url = buildUrlWithParams(ENDPOINT_BASE, params);
+                const res = await fetch(url, { method: 'GET' });
+                const text = await res.text();
+
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch {
+                    result.innerHTML = '<div class="alert alert-danger">Resposta não-JSON recebida do servidor.</div>';
+                    return;
+                }
+                let items = pickItems(data).map(x => x.tcc || x);
+
+                // Aplica filtro de período somente no front
+                if (params.periodo) {
+                    const alvo = String(params.periodo).trim();
+                    items = items.filter(t => {
+                        const periodo = String(t.periodo_letivo || '').trim();
+                        return periodo === alvo;
+                    });
+                }
+
+                render(items);
+            } catch (e) {
+                result.innerHTML =
+                    '<div class="alert alert-danger">Erro na requisição: ' + escapeHTML(e.message) + '</div>';
+            }
+        }
+
+        function buildUrlWithParams(base, {orders, texto, periodo }) {
+            const qs = new URLSearchParams();
+            qs.set('ws', 'tcc');
+
+            if (texto) qs.set('texto', texto);
+
+            if (orders && orders.length) {
+                orders.forEach(o => qs.append('order', o));
+            }
+
+            const sep = base.includes('?') ? '&' : '?';
+            return base + sep + qs.toString();
+        }
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const texto = document.getElementById('texto')?.value.trim();
+            const periodo = periodoSelect?.value || '';
+            const orders = [...document.querySelectorAll('#tcc .order:checked')].map(e => e.value);
+            callGet({orders, texto, periodo });
+        });
+
+        // ------- CARREGAR PERÍODOS LETIVOS NO SELECT --------
+        async function loadPeriodosLetivos() {
+            try {
+                const url = ENDPOINT_BASE + '?ws=periodo_letivo&base=tcc';
+                const res = await fetch(url);
+                const text = await res.text();
+                
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch {
+                    console.warn('Não foi possível interpretar JSON de períodos.');
+                    return;
+                }
+
+                const lista = Array.isArray(data) ? data : [];
+                const usados = new Set();
+
+                lista.forEach(item => {
+                    const periodo = item?.periodo;
+                    if (!periodo) return;
+
+                    const id = String(periodo.id ?? '').trim();
+                    const anoSemestre = String(periodo.ano_semestre ?? '').trim();
+                    if (!anoSemestre) return;
+
+                    const key = id || anoSemestre;
+                    if (usados.has(key)) return;
+                    usados.add(key);
+
+                    const opt = document.createElement('option');
+                    opt.value = anoSemestre;
+                    opt.dataset.id = id;
+                    opt.textContent = anoSemestre;
+
+                    periodoSelect.appendChild(opt);
+                });
+
+            } catch (e) {
+                console.warn('Erro ao carregar períodos letivos:', e);
+            }
+        }
+
+        loadPeriodosLetivos();
+    })();
+</script>
+</body>
+</html>
