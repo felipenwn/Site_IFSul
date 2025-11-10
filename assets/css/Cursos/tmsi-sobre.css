@@ -23,7 +23,11 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, var(--ifsul-green-dark) 0%, var(--ifsul-green) 50%, var(--ifsul-green-light) 100%);
+    /* background: linear-gradient(135deg, var(--ifsul-green-dark) 0%, var(--ifsul-green) 50%, var(--ifsul-green-light) 100%); */
+    background-image:url(../../img/background_home_tsmi.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     padding: 120px 0 80px;
     position: relative;
@@ -443,7 +447,11 @@ body {
 
 /* CTA Section */
 .cta-section {
-    background: linear-gradient(135deg, var(--ifsul-green-dark), var(--ifsul-green));
+    /* background: linear-gradient(135deg, var(--ifsul-green-dark), var(--ifsul-green)); */
+    background-image:url(../../img/background_home_tsmi.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
     color: white;
     padding: 80px 0;
     text-align: center;

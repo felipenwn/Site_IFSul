@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <div id="header-placeholder"></div>
+ <div id="header-placeholder"></div>
     <script>
-        fetch('/Site_IFSul/src/header/index.html')
+         fetch('../header/index.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;

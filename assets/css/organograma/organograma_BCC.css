@@ -16,7 +16,10 @@
 
         /* Header Section */
         .page-header {
-            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #43a047 100%);
+            /* background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 50%, #43a047 100%); */
+            background-image:url(../../img/background_home_bcc.png) ;
+            background-size: cover;
+            background-repeat: no-repeat;
             padding: 6rem 0 3rem;
             margin-top: 76px;
             color: white;
@@ -100,13 +103,15 @@
             border-radius: 6px;
             border: 2px solid #333;
         }
-
+    h5 .text-success {
+     color: #1C3F5F !important;
+    }
         .legend-box.normal { 
-            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-            border-color: #2e7d32;
+            background: linear-gradient(135deg, #2a678f3f 0%, #2a678f5b 100%);
+            border-color: #0277bd;
         }
         .legend-box.selected { 
-            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            background: linear-gradient(135deg, #1a678f 0%, #2a678f 100%);
         }
         .legend-box.prerequisite { 
             background: linear-gradient(135deg, #fff9c4 0%, #ffeb3b 100%);
@@ -135,14 +140,14 @@
         .semester-title {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            color: #1b5e20;
+            color: #1C3F5F;
             font-size: 1.5rem;
             margin-bottom: 2rem;
             padding: 1rem 1.5rem;
-            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
-            border-left: 5px solid #2e7d32;
+            background: linear-gradient(135deg, #23557731 0%, #2a678f98 100%);
+            border-left: 5px solid #235577;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(46, 125, 50, 0.1);
+            box-shadow: 0 2px 8px rgba(35, 85, 119, 0.1);
         }
 
         .subjects {
@@ -152,8 +157,8 @@
         }
 
         .subject {
-            background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
-            border: 2px solid #66bb6a;
+            background: linear-gradient(135deg, #2a678f3f 0%, #2a678f5b 100%);
+            border: 2px solid #246591;
             border-radius: 12px;
             padding: 1.2rem;
             cursor: pointer;
@@ -168,25 +173,25 @@
 
         .subject:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.2);
-            border-color: #2e7d32;
+            box-shadow: 0 6px 20px rgba(35, 85, 119, 0.2);
+            border-color: #2a678f7c;
         }
 
         .subject-name {
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             font-size: 0.95rem;
-            color: #1b5e20;
+            color: #2a678f;
             text-align: center;
             line-height: 1.4;
         }
 
         /* Subject States */
         .subject.selected {
-            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
-            border-color: #1b5e20;
+            background: linear-gradient(135deg, #1a678f 0%, #2a678f 100%);
+            border-color: #2a678f;
             transform: scale(1.05);
-            box-shadow: 0 8px 25px rgba(27, 94, 32, 0.4);
+            box-shadow: 0 8px 25px rgba(35, 85, 119, 0.2);
             z-index: 10;
         }
 
@@ -220,7 +225,7 @@
             background: #e0e0e0;
             border-color: #bdbdbd;
             opacity: 0.3;
-            cursor: not-allowed;
+            /* cursor: not-allowed; */
         }
 
         .subject.inactive:hover {
@@ -238,7 +243,7 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+            background: linear-gradient(135deg, #1a678f 0%, #2a678f 100%);
             color: white;
             border: none;
             border-radius: 50px;
@@ -246,7 +251,7 @@
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(27, 94, 32, 0.4);
+            box-shadow: 0 4px 15px rgba(35, 85, 119, 0.4);
             transition: all 0.3s ease;
             z-index: 1000;
             display: none;
@@ -258,7 +263,7 @@
 
         .clear-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 25px rgba(27, 94, 32, 0.5);
+            box-shadow: 0 6px 25px rgba(35, 85, 119, 0.5);
         }
 
         /* Complementary Activities */

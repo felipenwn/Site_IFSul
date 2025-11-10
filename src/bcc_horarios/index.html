@@ -18,7 +18,7 @@
 <body>
     <div id="header-placeholder"></div>
     <script>
-        fetch('/Site_IFSul/src/header/index.html')
+        fetch('../header/index.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
@@ -28,7 +28,6 @@
         function ajustarNavbar() {
             let path = window.location.pathname;
             let isHome = path.includes("/home/index.html") || path.endsWith("/home/");
-
             let navLinks = document.querySelector(".navbar-nav");
 
             if (!isHome) {
