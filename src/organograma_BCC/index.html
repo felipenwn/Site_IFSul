@@ -11,12 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/common/header.css">
     <link rel="stylesheet" href="../../assets/css/common/footer.css">
-    <link rel="stylesheet" href="../../assets/css/organograma/organograma.css">
+    <link rel="stylesheet" href="../../assets/css/organograma/organograma_BCC.css">
 </head>
 <body>
-    <div id="header-placeholder"></div>
+ <div id="header-placeholder"></div>
     <script>
-        fetch('../header/index.html')
+         fetch('../header/index.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-placeholder').innerHTML = data;
@@ -38,20 +38,22 @@
 
                 let contatoLink = navLinks.querySelector("a[href='#contato']");
                 if (contatoLink) contatoLink.closest("li").remove();
+
+                let arenaLink = navLinks.querySelector("a[href='#arena']");
+                if (arenaLink) arenaLink.setAttribute("href", "../arenagame/index.html");
             }
         }
     </script>
 
     <main>
-        <!-- Header Section -->
+        
         <section class="page-header">
             <div class="container text-center">
-                <h1><i class="bi bi-diagram-3"></i> Organograma Curricular</h1>
-                <p>Bacharelado em Ciência da Computação - IFSul Passo Fundo</p>
+                <h1><i class="bi bi-diagram-3"></i> Matriz de Pré-requisitos <hr> Bacharelado em Ciência da Computação</h1>
             </div>
         </section>
 
-        <!-- Instructions Card -->
+        
         <div class="container">
             <div class="instructions-card">
                 <h5><i class="bi bi-info-circle-fill text-success"></i> Como usar</h5>
@@ -82,10 +84,10 @@
             </div>
         </div>
 
-        <!-- Organogram Section -->
+        
         <section class="organogram-section">
             <div class="container" id="organogram">
-                <!-- Semestre 1 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-1-circle-fill"></i> Primeiro Semestre</div>
                     <div class="subjects">
@@ -110,7 +112,7 @@
                     </div>
                 </div>
 
-                <!-- Semestre 2 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-2-circle-fill"></i> Segundo Semestre</div>
                     <div class="subjects">
@@ -135,7 +137,7 @@
                     </div>
                 </div>
 
-                <!-- Semestre 3 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-3-circle-fill"></i> Terceiro Semestre</div>
                     <div class="subjects">
@@ -160,7 +162,7 @@
                     </div>
                 </div>
 
-                <!-- Semestre 4 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-4-circle-fill"></i> Quarto Semestre</div>
                     <div class="subjects">
@@ -185,7 +187,7 @@
                     </div>
                 </div>
 
-                <!-- Semestre 5 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-5-circle-fill"></i> Quinto Semestre</div>
                     <div class="subjects">
@@ -213,7 +215,7 @@
                     </div>
                 </div>
 
-                <!-- Semestre 6 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-6-circle-fill"></i> Sexto Semestre</div>
                     <div class="subjects">
@@ -238,7 +240,7 @@
                     </div>
                 </div>
 
-                <!-- Semestre 7 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-7-circle-fill"></i> Sétimo Semestre</div>
                     <div class="subjects">
@@ -263,7 +265,7 @@
                     </div>
                 </div>
 
-                <!-- Semestre 8 -->
+                
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-8-circle-fill"></i> Oitavo Semestre</div>
                     <div class="subjects">
@@ -295,7 +297,7 @@
             </div>
         </section>
 
-        <!-- Clear Selection Button -->
+        
         <button class="clear-btn" id="clearBtn">
             <i class="bi bi-x-circle"></i> Limpar Seleção
         </button>
@@ -419,11 +421,16 @@
 
         // 3. Adiciona o listener para "clicar fora"
         document.addEventListener('click', (e) => {
-            // Se o clique não for numa disciplina E não for no botão de limpar
+            // --- CORREÇÃO 2: INÍCIO ---
+            // Verifica se o clique foi dentro do header. Se sim, não faz nada.
+            if (e.target.closest('#header-placeholder')) {
+                return;
+            }
             if (!e.target.closest('.subject') && !e.target.closest('#clearBtn')) {
                 clearSelection();
             }
         });
     </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
