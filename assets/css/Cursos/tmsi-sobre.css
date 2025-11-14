@@ -1,4 +1,4 @@
-/* Variáveis de cor */
+
 :root {
     --ifsul-green: #1a5f3a;
     --ifsul-green-light: #2d7a52;
@@ -8,7 +8,7 @@
     --text-dark: #212529;
 }
 
-/* Reset básico */
+
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Hero Section */
+
 .hero-section {
     /* background: linear-gradient(135deg, var(--ifsul-green-dark) 0%, var(--ifsul-green) 50%, var(--ifsul-green-light) 100%); */
     background-image:url(../../img/background_home_tsmi.png) ;
@@ -183,7 +183,7 @@ body {
     margin: 0 auto;
 }
 
-/* Sobre o Curso */
+
 .about-section {
     padding: 80px 0;
 }
@@ -219,7 +219,7 @@ body {
     color: var(--text-dark);
 }
 
-/* Ambientes Carousel */
+
 .ambientes-section {
     padding: 80px 0;
     background: white;
@@ -263,7 +263,7 @@ body {
     right: 20px;
 }
 
-/* Documentação e Processos */
+
 .docs-section {
     padding: 80px 0;
     background: var(--gray-light);
@@ -337,7 +337,7 @@ body {
     color: var(--ifsul-green-dark);
 }
 
-/* FAQs */
+
 .faqs-section {
     padding: 80px 0;
     background: white;
@@ -397,7 +397,7 @@ body {
 }
 
 
-/* Diferenciais */
+
 .differentials-section {
     background: var(--gray-light);
     padding: 80px 0;
@@ -445,7 +445,7 @@ body {
     color: var(--gray-medium);
 }
 
-/* CTA Section */
+
 .cta-section {
     /* background: linear-gradient(135deg, var(--ifsul-green-dark), var(--ifsul-green)); */
     background-image:url(../../img/background_home_tsmi.png) ;

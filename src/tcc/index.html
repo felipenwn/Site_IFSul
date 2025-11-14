@@ -61,6 +61,13 @@
                     </select>
                 </div>
                 <div class="col-sm-3">
+                    <label for="curso" class="form-label">Curso</label>
+                    <select id="curso" class="form-select">
+                        <option value="">Todos</option>
+                        <!-- opções serão preenchidas via JS -->
+                    </select>
+                </div>
+                <div class="col-sm-3">
                     <label class="form-label">Pesquise por palavras relacionadas</label>
                     <input id="texto" class="form-control" type="text" >
                 </div>
@@ -69,19 +76,19 @@
             <label class="form-label d-block">Ordenação</label>
             <div class="d-flex flex-wrap gap-2">
               <div class="form-check">
-                <input class="form-check-input order" type="checkbox" value="data_defesa DESC" id="ord1" checked>
+                <input class="form-check-input order" type="checkbox" value="data_defesa DESC" id="ord1">
                 <label class="form-check-label" for="ord1">Data da Defesa do TCC (DESC)</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input order" type="checkbox" value="data_defesa" id="ord2" checked>
+                <input class="form-check-input order" type="checkbox" value="data_defesa" id="ord2">
                 <label class="form-check-label" for="ord2">Data da Defesa do TCC (ASC)</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input order" type="checkbox" value="aluno" id="ord3" checked>
+                <input class="form-check-input order" type="checkbox" value="aluno" id="ord3">
                 <label class="form-check-label" for="ord3">Nome do Aluno</label>
               </div>
               <div class="form-check">
-                <input class="form-check-input order" type="checkbox" value="titulo" id="ord4" checked>
+                <input class="form-check-input order" type="checkbox" value="titulo" id="ord4">
                 <label class="form-check-label" for="ord4">Titulo do TCC</label>
               </div>
             </div>
@@ -149,6 +156,7 @@
         const result = document.getElementById('tccResult');
         const raw = document.getElementById('tccRaw');
         const periodoSelect = document.getElementById('periodo');
+        const cursoSelect = document.getElementById('curso');
 
         function escapeHTML(s) {
             return String(s ?? '').replace(/[&<>"']/g, c => ({
@@ -222,12 +230,12 @@
                     <div id="${collapseId}" class="accordion-collapse collapse"
                          aria-labelledby="${headerId}" data-bs-parent="#tccAccordion">
                         <div class="accordion-body">
-                            <p>Aluno: ${aluno}</p>
-                            <p>Orientador: ${orientador ? '' + orientador : ''}</p>
-                            <p>Curso: ${curso ? '' + curso : ''}</p>
-                            <p>Data de Defesa: ${data ? '' + data : ''}</p>
-                            <p>Período Letivo: ${periodo ? '' + periodo : ''}</p>
-                            Resumo:${resumo
+                            <p><b>Aluno:</b> ${aluno}</p>
+                            <p><b>Orientador:</b> ${orientador ? '' + orientador : ''}</p>
+                            <p><b>Curso:</b> ${curso ? '' + curso : ''}</p>
+                            <p><b>Data de Defesa:</b> ${data ? '' + data : ''}</p>
+                            <p><b>Período Letivo:</b> ${periodo ? '' + periodo : ''}</p>
+                            <b>Resumo:</b>${resumo
                                 ? `<p class="mb-3">${resumo}</p>`
                                 : '<p class="mb-3 text-muted">Sem resumo.</p>'}
                             <div class="d-flex gap-2">
@@ -274,10 +282,18 @@
 
                 // Aplica filtro de período somente no front
                 if (params.periodo) {
-                    const alvo = String(params.periodo).trim();
+                    const alvoPeriodo = String(params.periodo).trim();
                     items = items.filter(t => {
                         const periodo = String(t.periodo_letivo || '').trim();
-                        return periodo === alvo;
+                        return periodo === alvoPeriodo;
+                    });
+                }
+
+                if (params.curso) {
+                    const alvoCurso = String(params.curso).trim();
+                    items = items.filter(t => {
+                        const curso = String(t.curso || '').trim();
+                        return curso === alvoCurso;
                     });
                 }
 
@@ -306,8 +322,9 @@
             e.preventDefault();
             const texto = document.getElementById('texto')?.value.trim();
             const periodo = periodoSelect?.value || '';
+            const curso = cursoSelect?.value || '';
             const orders = [...document.querySelectorAll('#tcc .order:checked')].map(e => e.value);
-            callGet({orders, texto, periodo });
+            callGet({orders, texto, periodo, curso });
         });
 
         // ------- CARREGAR PERÍODOS LETIVOS NO SELECT --------
@@ -353,7 +370,50 @@
             }
         }
 
+        async function loadCursos() {
+            try {
+                const url = ENDPOINT_BASE + '?ws=curso&base=tcc';
+                const res = await fetch(url);
+                const text = await res.text();
+                
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch {
+                    console.warn('Não foi possível interpretar JSON de períodos.');
+                    return;
+                }
+
+                const lista = Array.isArray(data) ? data : [];
+                const usados = new Set();
+
+                lista.forEach(item => {
+                    const curso = item?.curso;
+                    if (!curso) return;
+
+                    const id = String(curso.id ?? '').trim();
+                    const cursoTCC = String(curso.nome ?? '').trim();
+                    if (!curso) return;
+
+                    const key = id || cursoTCC;
+                    if (usados.has(key)) return;
+                    usados.add(key);
+
+                    const opt = document.createElement('option');
+                    opt.value = cursoTCC;
+                    opt.dataset.id = id;
+                    opt.textContent = cursoTCC;
+
+                    cursoSelect.appendChild(opt);
+                });
+
+            } catch (e) {
+                console.warn('Erro ao carregar períodos letivos:', e);
+            }
+        }
+
         loadPeriodosLetivos();
+        loadCursos();
     })();
 </script>
 </body>
