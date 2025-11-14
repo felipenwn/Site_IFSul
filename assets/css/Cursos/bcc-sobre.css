@@ -167,6 +167,12 @@ body {
     font-weight: 600;
 }
 
+.card-conteudo span p{
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 /* Section Styles */
 .section-header {
     margin-bottom: 50px;
