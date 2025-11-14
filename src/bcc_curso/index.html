@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../assets/css/common/header.css">
     <link rel="stylesheet" href="../../assets/css/arenagames/arenagames.css">
     <link rel="stylesheet" href="../../assets/css/common/footer.css">
+    <link rel="stylesheet" href="../../assets/css/Cursos/bcc-sobre.css">
 </head>
 
 <body>
@@ -46,164 +47,550 @@
         }
     </script>
     <main>
-        <section id="home" class="main gradient-bg">
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <filter id="goo">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 1  0 1 0 0 0  5 0 1 0 0  0 1 0 18 -8"
-                            result="goo" />
-                        <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-                </defs>
-            </svg>
-            <div class="gradients-container">
-                <div class="g1"></div>
-                <div class="g2"></div>
-                <div class="g3"></div>
-                <div class="g4"></div>
-                <div class="g5"></div>
-                <div class="interactive"></div>
-            </div>
+
+        <section class="hero-section">
             <div class="container">
-                <div class="main-content">
-                    <h1>Bacharelado em Ciência da Computação - IFsul </h1>
-                    <p>Confira tudo sobre o curso</p>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-content">
+                        <span class="hero-badge">GRADUAÇÃO</span>
+                        <h1 class="hero-title">Ciência da Computação</h1>
+                        <p class="hero-subtitle">Dê vida às suas ideias e construa o futuro com o curso de Ciência da Computação do IFSul.</p>
+                        <a href="#inscricao" class="btn-cta">Inscreva-se Agora</a>
+                    </div>
+                    <div class="col-lg-6 hero-image">
+                        <img src="../../assets/img/Places/Gemini_Generate_TMSI.png" alt="Técnico em Informática">
+                    </div>
+                    <span class="mec-banner">Conceito máximo MEC</span>
+                    <div class="align-items-center">
+                        <!-- <span class="mec-number">5</span> -->
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="sobre" class="py-5">
-            <div class="container">
-                <h2 class="section-title">Sobre o curso</h2>
-                <div class="row">
-                    <div class="col-lg-8">
-                        <p class="mb-4 ">O curso tem duração de 8 semestres, sendo oferecido no turno da manhã, com um total de 30 vagas por semestre.
-                        Cientistas  da Computação  são  profissionais  responsáveis  pelo desenvolvimento  científico  (teorias,  métodos,  linguagens,  modelos,  entre  outros)  
-                        e tecnológico da Computação. Para  ingressar  no  Curso  de  Bacharelado  em Ciência  da  Computação,  os candidatos deverão ter concluído o Ensino Médio ou equivalente. 
-                        O processo seletivo para ingresso no Curso dar-se-á exclusivamente pelo Sistema de Seleção Unificada – SISU/MEC.
+
+        <body>
+
+            <section class="section-infos-curso">
+                <div class="wrapper-infos-curso">
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Modalidade</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134b57_options.svg"
+                                alt="Ícone">
+                            <span>Presencial</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Titulação</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134b59_degrees.svg"
+                                alt="Ícone">
+                            <span>Bacharel</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Local</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134bc7_location%20(1).svg"
+                                alt="Ícone">
+                            <span>Passo Fundo - RS</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Coordenação</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134b8a_hierarchical-structure.svg"
+                                alt="Ícone">
+                            <span>Prof. Vanessa Lago Machado</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Período</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684c78833a8801fbc184b967_day-and-night.svg"
+                                alt="Ícone">
+                            <span>Matutino</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Carga Horária</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134b54_timer.svg"
+                                alt="Ícone">
+                            <span>3245 horas</span>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Duração</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134b55_waiting.svg"
+                                alt="Ícone">
+                            <span>8 semestres</span>
+                        </div>
+                    </fieldset>
+
+                    <!-- <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Duração Máxima</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134b55_waiting.svg"
+                                alt="Ícone">
+                            <span>8 semestres </span>
+                        </div>
+                    </fieldset> -->
+
+                    <fieldset class="card-info-curso">
+                        <legend class="card-titulo">Vagas</legend>
+                        <div class="card-conteudo">
+                            <img src="https://cdn.prod.website-files.com/684b3a171f24ed59da1346e6/684b3a171f24ed59da134b59_degrees.svg"
+                                alt="Ícone">
+                            <span>20 por semestre</span>
+                        </div>
+                    </fieldset>
+                </div>
+            </section>
+
+
+            <section class="about-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">SOBRE O CURSO</span>
+                        <h2 class="section-title">Torne-se um Profissional Inovador em Tecnologia</h2>
+                        <p class="section-description">
+                            Formação completa para atuar na criação, análise e evolução de soluções computacionais
                         </p>
-                        
                     </div>
-                    <div class="col-lg-4">
-                        <div class="event-card">
-                            <div class="event-info">
-                                <div class="event-time">
-                                    <i class="bi bi-pin-map-fill"></i>
-                                    <span>Local: <b>IFSUL campus Passo Fundo</b><span>
-                                </div>
-                                <div class="event-time">
-                                    <i class="bi bi-alarm"></i>
-                                    <span>Duração: <b>2.500 horas</b></span>
-                                </div>
 
-                                <div class="event-time">
-                                    <i class="bi bi-stopwatch"></i>
-                                    <span>Horário: <b>8h às 12h</b><span>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>
+                                O curso de Bacharelado em Ciência da Computação do IFSul – Campus Passo Fundo forma
+                                profissionais com uma sólida base teórica e prática, preparados para enfrentar os
+                                desafios da transformação digital e da inovação tecnológica.
+                            </p>
+
+
+                            <p>
+                                Desde sua implantação, o curso tem o objetivo de capacitar profissionais capazes de
+                                projetar,
+                                desenvolver e gerenciar sistemas computacionais, atuando em áreas como desenvolvimento
+                                de software,
+                                inteligência artificial, ciência de dados, segurança da informação e redes de
+                                computadores.
+                            </p>
+
+                            <p>
+                                Com uma formação que une fundamentos da computação, pesquisa aplicada e prática
+                                profissional,
+                                o egresso estará apto a atuar no mercado de tecnologia, em empresas públicas ou
+                                privadas, ou
+                                ainda seguir carreira acadêmica, contribuindo para o avanço da ciência e da inovação no
+                                país.
+                            <div class="about-highlight">
+                                <p>
+                                    <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                    Prepare-se para construir o futuro da tecnologia e transformar ideias em soluções
+                                    inteligentes.
+                                </p>
+                            </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="differentials-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">DIFERENCIAIS</span>
+                        <h2 class="section-title">Por que escolher o IFSul?</h2>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="differential-card">
+                                <div class="differential-icon">
+                                    <i class="bi bi-laptop"></i>
                                 </div>
+                                <h3 class="differential-title">Infraestrutura Completa</h3>
+                                <p class="differential-text">
+                                    Laboratórios modernos e equipados com tecnologia de ponta para práticas e
+                                    desenvolvimento de projetos.
+                                </p>
+                            </div>
+                        </div>
 
-                                <hr class="my-4">
+                        <div class="col-md-4">
+                            <div class="differential-card">
+                                <div class="differential-icon">
+                                    <i class="bi bi-award"></i>
+                                </div>
+                                <h3 class="differential-title">Professores Qualificados</h3>
+                                <p class="differential-text">
+                                    Corpo docente formado por mestres e doutores com vasta experiência profissional e
+                                    acadêmica.
+                                </p>
+                            </div>
+                        </div>
 
-                                
-                                <!-- <p class="mb-4 text-center"> <b>Inscrições encerradas!</b> Agradecemos a participação de
-                                    todos! :)
-                                </p> -->
-                                <!-- <div class="d-flex justify-content-center">
-                                    <a class="btn btn-primary disabled" title="JEMS: Submissão de artigos"
-                                        href="https://painel.passofundo.ifsul.edu.br/syseve/eventos/?eve=205"
-                                        target="blank"><i class="bi bi-pencil-square"></i> Inscrever-se</a>
-                                </div> -->
+                        <div class="col-md-4">
+                            <div class="differential-card">
+                                <div class="differential-icon">
+                                    <i class="bi bi-briefcase"></i>
+                                </div>
+                                <h3 class="differential-title">Preparação para o Mercado</h3>
+                                <p class="differential-text">
+                                    Formação alinhada com as demandas do mercado, preparando profissionais prontos para
+                                    atuar.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            </section>
 
-        </section>
-        <section id="galeria" class="py-5 bg-light">
-            <div class="container">
-                <span class="section-subtitle">Confira imagens</span>
-                <h2 class="section-title">Galeria de fotos</h2>
-                <div class="event-gallery">
-                    <div id="carouselArena" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../../assets/img/events/arenagames/arena-2.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-3.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-4.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-5.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-6.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-7.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-8.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-9.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-10.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
 
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-11.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
-                            </div>
+            <section class="ambientes-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">AMBIENTES</span>
+                        <h2 class="section-title">Conheça Nossa Infraestrutura</h2>
+                        <p class="section-description">
+                            Espaços modernos e equipados para sua formação profissional
+                        </p>
+                    </div>
 
-                            <div class="carousel-item">
-                                <img src="../../assets/img/events/arenagames/arena-12.jpeg" class="d-block w-100"
-                                    alt="Foto da Arena Games">
+                    <div class="carousel-container">
+                        <div id="ambientesCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#ambientesCarousel" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#ambientesCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#ambientesCarousel" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#ambientesCarousel" data-bs-slide-to="3"></button>
                             </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="../../assets/img/Places/Sala-Aula.jpg" class="d-block w-100"
+                                        alt="Laboratório de Informática">
+                                    <div class="carousel-caption">
+                                        <h5>Laboratório de Informática</h5>
+                                        <p>Equipamentos de última geração para práticas e desenvolvimento</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/img/Places/Sala-Moderna.jpg" class="d-block w-100"
+                                        alt="Sala de Aula">
+                                    <div class="carousel-caption">
+                                        <h5>Salas de Aula Modernas</h5>
+                                        <p>Ambientes climatizados e equipados com recursos multimídia</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/img/Places/Biblio.jpg" class="d-block w-100"
+                                        alt="Biblioteca">
+                                    <div class="carousel-caption">
+                                        <h5>Biblioteca</h5>
+                                        <p>Amplo acervo técnico e espaços de estudo</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../../assets/img/Places/Convi.jpg" class="d-block w-100"
+                                        alt="Área de Convivência">
+                                    <div class="carousel-caption">
+                                        <h5>Áreas de Convivência</h5>
+                                        <p>Espaços para integração e descanso</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#ambientesCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#ambientesCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselArena"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselArena"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Próximo</span>
-                        </button>
                     </div>
                 </div>
-                <span class="section-subtitle text-center">Imagens capturadas no campus</span>
-            </div>
-        </section>
+            </section>
 
-        
 
-        
+            <section class="cta-section" id="inscricao">
+                <div class="container">
+                    <h2 class="cta-title">Pronto para começar sua jornada?</h2>
+                    <p class="cta-text">
+                        Faça parte do IFSul e transforme seu futuro profissional
+                    </p>
+                    <a href="https://processoseletivo.ifsul.edu.br/" target="_blank" class="btn-cta">
+                        <i class="bi bi-pencil-square me-2"></i>
+                        Inscreva-se Agora
+                    </a>
+                </div>
+            </section>
 
-        <div id="footer-placeholder"></div>
-        <script>
-            fetch('../footer/index.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-placeholder').innerHTML = data;
-                });
-        </script>
 
+            <section class="docs-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">DOCUMENTAÇÃO</span>
+                        <h2 class="section-title">Processos Seletivos</h2>
+                        <p class="section-description">
+                            Acesse todos os documentos importantes e resultados dos processos seletivos
+                        </p>
+                    </div>
+
+                    <div class="docs-grid">
+                        <!-- <div class="doc-card">
+                        <div class="doc-icon">
+                            <i class="bi bi-file-earmark-text"></i>
+                        </div>
+                        <h3 class="doc-title">Projeto Pedagógico do Curso (PPC)</h3>
+                        <p class="doc-description">
+                            Conheça a estrutura curricular, objetivos e metodologia do curso
+                        </p>
+                        <a href="#" class="doc-link">
+                            Acessar documento <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div> -->
+
+
+
+                        <div class="doc-card">
+                            <div class="doc-icon">
+                                <i class="bi bi-clipboard-check"></i>
+                            </div>
+                            <h3 class="doc-title">Resultados de Processos Seletivos</h3>
+                            <p class="doc-description">
+                                Confira a lista dos candidatos aprovados no primeiro processo
+                            </p>
+                            <a href="https://processoseletivo.ifsul.edu.br/vestibular-2025-1/resultados-e-chamadas/itemlist/category/2547-passo-fundo"
+                                class="doc-link" target="_blank">
+                                Ver resultado <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <!-- <div class="doc-card">
+                        <div class="doc-icon">
+                            <i class="bi bi-clipboard-data"></i>
+                        </div>
+                        <h3 class="doc-title">Resultado do 2º Processo Seletivo</h3>
+                        <p class="doc-description">
+                            Confira a lista dos candidatos aprovados no segundo processo
+                        </p>
+                        <a href="#" class="doc-link">
+                            Ver resultado <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div> -->
+
+                        <!-- <div class="doc-card">
+                        <div class="doc-icon">
+                            <i class="bi bi-book"></i>
+                        </div>
+                        <h3 class="doc-title">Regulamento Acadêmico</h3>
+                        <p class="doc-description">
+                            Normas e diretrizes acadêmicas do IFSul
+                        </p>
+                        <a href="#" class="doc-link">
+                            Acessar regulamento <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div> -->
+
+
+                        <div class="doc-card">
+                            <div class="doc-icon">
+                                <i class="bi bi-file-pdf"></i>
+                            </div>
+                            <h3 class="doc-title">Editais</h3>
+                            <p class="doc-description">
+                                Orientações completas para candidatos ao processo seletivo
+                            </p>
+                            <a href="https://processoseletivo.ifsul.edu.br/vestibular-2025-1/editais" class="doc-link"
+                                target="_blank">
+                                Acesse os Editais <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="doc-card">
+                            <div class="doc-icon">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                            <h3 class="doc-title">Calendário Acadêmico</h3>
+                            <p class="doc-description">
+                                Consulte as datas importantes do ano letivo
+                            </p>
+                            <a href="https://inf.passofundo.ifsul.edu.br/arq/calendario_academico_2025.pdf"
+                                class="doc-link" target="_blank">
+                                Acessar calendário <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="faqs-section">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-badge">DÚVIDAS FREQUENTES</span>
+                        <h2 class="section-title">Perguntas Frequentes</h2>
+                        <p class="section-description">
+                            Tire suas dúvidas sobre o curso e o processo seletivo
+                        </p>
+                    </div>
+
+                    <div class="faq-container">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        Quais os requisitos para ingressar no curso?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Para ingressar no Curso Técnico em Manutenção e Suporte em Informática é
+                                        necessário ter concluído ou estar cursando o Ensino Médio. O ingresso ocorre
+                                        através de processo seletivo realizado semestralmente pelo IFSul.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Quando ocorre o vestibular/processo seletivo?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        O processo seletivo ocorre duas vezes ao ano, geralmente nos meses de junho e
+                                        novembro. As inscrições ficam abertas por aproximadamente 30 dias antes da
+                                        realização das provas. Fique atento ao site oficial do IFSul para conhecer as
+                                        datas exatas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Qual o valor da inscrição no processo seletivo?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        O IFSul não cobra taxa de inscrição para os processos seletivos. O ingresso é
+                                        gratuito e todos os candidatos que atendem aos requisitos mínimos podem se
+                                        inscrever sem custos.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        O curso é gratuito?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Sim! O curso é totalmente gratuito. Como instituição federal de ensino, o IFSul
+                                        oferece educação de qualidade sem cobrança de mensalidades ou taxas. Além disso,
+                                        há programas de auxílio estudantil para estudantes em situação de
+                                        vulnerabilidade socioeconômica.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        Qual o horário das aulas?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        As aulas são realizadas no período noturno, das 18h30min às 22h30min, de segunda
+                                        a sexta-feira. Este horário permite que estudantes que trabalham durante o dia
+                                        possam frequentar o curso.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq6">
+                                        Quais cidades têm aplicação das provas?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        As provas do processo seletivo são aplicadas no Campus Passo Fundo do IFSul.
+                                        Candidatos de outras cidades devem se deslocar até Passo Fundo para realizar a
+                                        prova.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq7">
+                                        Quando é o início das matrículas dos processos seletivos?
+                                    </button>
+                                </h2>
+                                <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        As matrículas geralmente ocorrem em janeiro (para início das aulas em março) e
+                                        em julho (para início das aulas em agosto). Os candidatos aprovados são
+                                        convocados por ordem de classificação e têm um prazo específico para realizar a
+                                        matrícula, conforme edital do processo seletivo.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faq8">
+                                        Preciso ter conhecimento prévio em informática?
+                                    </button>
+                                </h2>
+                                <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Não é necessário ter conhecimento prévio em informática. O curso é estruturado
+                                        para receber estudantes de diferentes níveis de conhecimento, começando desde os
+                                        conceitos básicos até os mais avançados. O importante é ter interesse pela área
+                                        e disposição para aprender.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
