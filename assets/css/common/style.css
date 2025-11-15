@@ -179,7 +179,7 @@ html {
 
 
 .contact-image img {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -418,7 +418,7 @@ html {
 
   .contact-image {
     order: -1;
-    max-width: 50%;
+    width: 50%;
   }
 }
 
