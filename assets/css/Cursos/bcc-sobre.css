@@ -177,7 +177,7 @@ body {
     width: 28px;
     height: 28px;
     opacity: 0.7;
-    filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(1068%) hue-rotate(122deg) brightness(92%) contrast(94%);
+   filter: invert(23%) sepia(98%) saturate(588%) hue-rotate(169deg) brightness(87%) contrast(84%);
 }
 
 .card-conteudo span {
@@ -280,7 +280,7 @@ body {
 }
 
 .carousel-caption {
-    background: rgba(26, 95, 58, 0.9);
+    background: #234e75cc;
     padding: 15px 30px;
     border-radius: 10px;
     bottom: 40px;
@@ -489,7 +489,7 @@ body {
 /* CTA Section */
 .cta-section {
     /* background: linear-gradient(135deg, var(--ifsul-green-dark), var(--ifsul-green)); */
-    background-image: url(../../img/background_home_tsmi.png);
+    background-image: url(../../img/background_home_bcc.png);
     background-size: cover;
     background-repeat: no-repeat;
 
