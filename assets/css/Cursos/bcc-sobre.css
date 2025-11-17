@@ -32,6 +32,7 @@ body {
     margin-top: 20px !important;
     /* width: 300px !important; */
 }
+
 .mec-number {
     font-size: 2.5rem;
     font-weight: 600;
@@ -118,6 +119,24 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.btn-more {
+    color: white;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.card-contact {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-contact-icon {
+    font-size: 28px !important;
+    color: #529181;
 }
 
 .card-info-curso {
@@ -496,6 +515,19 @@ body {
     text-decoration: none;
     display: inline-block;
     transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta-disabled {
+    background: white;
+    color: var(--ifsul-green);
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    /* transition: all 0.3s ease; */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
