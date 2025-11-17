@@ -41,7 +41,7 @@ body {
 /* Hero Section */
 .hero-section {
     /* background: linear-gradient(135deg, var(--ifsul-green-dark) 0%, var(--ifsul-green) 50%, var(--ifsul-green-light) 100%); */
-    background-image: url(../../img/Places/background_bcc2.jpg);
+    background-image: url(../../img/background_home_bcc.png);
     background-size: cover;
     background-repeat: no-repeat;
  
