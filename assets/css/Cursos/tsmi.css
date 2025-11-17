@@ -137,6 +137,29 @@ hr.my-4 {
     margin: 0;
     font-size: 1rem;
 }
+.btn-cta {
+    background: white;
+    color: var(--ifsul-green);
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.btn-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    color: var(--ifsul-green-dark);
+}
+.head-container{
+    display: flex;
+    justify-content: space-between; /* Empurra um para esq. e outro para dir. */
+    align-items: center; /* Centraliza verticalmente (o botão fica no meio do texto) */
+    width: 100%;
+}
 
 
 .discipline-info p {
@@ -171,6 +194,17 @@ hr.my-4 {
     color: #666;
     transition: all 0.3s ease;
     border: 2px solid transparent;
+}
+section.secaoteste
+{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-wrapper
+{
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .nav-pills .nav-link:hover {
