@@ -56,8 +56,12 @@
                         </select>
                     </div>
                     <div class="col-sm-3">
+                        <label class="form-label">Pesquise pelo Orientador</label>
+                        <input id="orientador" class="form-control" type="text">
+                    </div>
+                    <div class="col-sm-3">
                         <label class="form-label">Pesquise por palavras relacionadas</label>
-                        <input id="texto" class="form-control" type="text" >
+                        <input id="texto" class="form-control" type="text">
                     </div>
             </div>
             <div class="col-sm-8">
@@ -109,9 +113,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
 
-    <script>
+<script>
     (function () {
-        const ENDPOINT_BASE = 'https://painel.passofundo.ifsul.edu.br/ws/';;
+        const ENDPOINT_BASE = 'https://painel.passofundo.ifsul.edu.br/ws/';
         const form = document.getElementById('tccForm');
         const result = document.getElementById('tccResult');
         const raw = document.getElementById('tccRaw');
@@ -183,6 +187,10 @@
                                     <strong class="me-2">${titulo}</strong>
                                 </div>
                                 <small class="text-body-secondary">
+                                    <p></p>
+                                    <p><b>Aluno:</b> ${aluno}</p>
+                                    <p><b>Período Letivo:</b> ${periodo ? '' + periodo : ''}</p>
+                                    <p><b>Data de Defesa:</b> ${data ? '' + data : ''}</p>
                                 </small>
                             </div>
                         </button>
@@ -190,11 +198,8 @@
                     <div id="${collapseId}" class="accordion-collapse collapse"
                          aria-labelledby="${headerId}" data-bs-parent="#tccAccordion">
                         <div class="accordion-body">
-                            <p><b>Aluno:</b> ${aluno}</p>
                             <p><b>Orientador:</b> ${orientador ? '' + orientador : ''}</p>
                             <p><b>Curso:</b> ${curso ? '' + curso : ''}</p>
-                            <p><b>Data de Defesa:</b> ${data ? '' + data : ''}</p>
-                            <p><b>Período Letivo:</b> ${periodo ? '' + periodo : ''}</p>
                             <b>Resumo:</b>${resumo
                                 ? `<p class="mb-3">${resumo}</p>`
                                 : '<p class="mb-3 text-muted">Sem resumo.</p>'}
@@ -249,6 +254,15 @@
                     });
                 }
 
+                // Aplica filtro de orientador somente no front
+                if (params.orientador) {
+                    items = items.filter(t => {
+                        const orientador = String(t.orientador || '').trim();
+                        return containsLike(orientador, params.orientador);
+                    });
+                }
+
+
                 if (params.curso) {
                     const alvoCurso = String(params.curso).trim();
                     items = items.filter(t => {
@@ -278,13 +292,50 @@
             return base + sep + qs.toString();
         }
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
+        function callFilter() {
             const texto = document.getElementById('texto')?.value.trim();
             const periodo = periodoSelect?.value || '';
+            const orientador = document.getElementById('orientador')?.value.trim();
             const curso = cursoSelect?.value || '';
             const orders = [...document.querySelectorAll('#tcc .order:checked')].map(e => e.value);
-            callGet({orders, texto, periodo, curso });
+            callGet({orders, texto, periodo, curso, orientador});
+        }
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            callFilter();
+        });
+
+        document.getElementById('orientador').addEventListener('input', function () {
+            callFilter();
+        });
+
+        document.getElementById('texto').addEventListener('input', function () {
+            callFilter();
+        });
+
+        document.getElementById('curso').addEventListener('change', function () {
+            callFilter();
+        });
+        
+        document.getElementById('periodo').addEventListener('change', function () {
+            callFilter();
+        });
+        
+        document.getElementById('ord1').addEventListener('change', function () {
+            callFilter();
+        });
+        
+        document.getElementById('ord2').addEventListener('change', function () {
+            callFilter();
+        });
+        
+        document.getElementById('ord3').addEventListener('change', function () {
+            callFilter();
+        });
+        
+        document.getElementById('ord4').addEventListener('change', function () {
+            callFilter();
         });
 
         // ------- CARREGAR PERÍODOS LETIVOS NO SELECT --------
@@ -371,6 +422,16 @@
                 console.warn('Erro ao carregar períodos letivos:', e);
             }
         }
+
+        function containsLike(value, term) {
+            if (value == null || term == null) return false;
+
+            const str = String(value).trim().toLowerCase();
+            const search = String(term).trim().toLowerCase();
+
+            return str.includes(search); // equivalente a LIKE '%term%'
+        }
+
 
         loadPeriodosLetivos();
         loadCursos();
