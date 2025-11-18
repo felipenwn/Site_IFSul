@@ -586,3 +586,40 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+
+.btn-cta {
+    background: white;
+    color: var(--ifsul-green);
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+.btn-encerrada {
+    background: rgba(255, 0, 0, 0.384);
+    color: white;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    cursor: not-allowed;
+}
+.btn-encerrada:hover {
+
+    color: white;
+}
+
+.btn-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    color: var(--ifsul-green-dark);
+}
