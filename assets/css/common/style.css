@@ -424,7 +424,7 @@ html {
 
 #home {
   position: relative;
-  background: url('/assets/img/gare.jpg') no-repeat center center/cover;
+  background: url('/assets/img/imagem_campus.png') no-repeat center center/cover;
   height: 80vh;
   display: flex;
   align-items: center;
