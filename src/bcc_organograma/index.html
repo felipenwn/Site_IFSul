@@ -50,6 +50,7 @@
         <section class="page-header">
             <div class="container text-center">
                 <h1><i class="bi bi-diagram-3"></i> Matriz de Pré-requisitos <hr> Bacharelado em Ciência da Computação</h1>
+                <p>Matriz 2023</p>
             </div>
         </section>
 
@@ -94,7 +95,7 @@
                         <div class="subject" data-id="alg1" data-prereq="">
                             <div class="subject-name">Algoritmos I</div>
                         </div>
-                        <div class="subject" data-id="intro" data-prereq="">
+                        <div class="subject" data-id="ihcc" data-prereq="">
                             <div class="subject-name">Introdução à História e Conceitos da Computação</div>
                         </div>
                         <div class="subject" data-id="matdisc" data-prereq="">
@@ -103,11 +104,11 @@
                         <div class="subject" data-id="cirdig" data-prereq="">
                             <div class="subject-name">Circuitos Digitais</div>
                         </div>
-                        <div class="subject" data-id="web1" data-prereq="">
+                        <div class="subject" data-id="cpw" data-prereq="">
                             <div class="subject-name">Criação de Páginas WEB</div>
                         </div>
                         <div class="subject" data-id="port" data-prereq="">
-                            <div class="subject-name">Língua Portuguesa</div>
+                            <div class="subject-name">Leitura e Produção Textual Acadêmica</div>
                         </div>
                     </div>
                 </div>
@@ -122,13 +123,13 @@
                         <div class="subject" data-id="soct" data-prereq="">
                             <div class="subject-name">Sociedade e Tecnologia</div>
                         </div>
-                        <div class="subject" data-id="arq1" data-prereq="cirdig">
+                        <div class="subject" data-id="arq1" data-prereq="cirdig,ihcc">
                             <div class="subject-name">Arquitetura de Computadores I</div>
                         </div>
-                        <div class="subject" data-id="calc1" data-prereq="">
+                        <div class="subject" data-id="calc1" data-prereq="matdisc">
                             <div class="subject-name">Cálculo Diferencial e Integral I</div>
                         </div>
-                        <div class="subject" data-id="elet" data-prereq="">
+                        <div class="subject" data-id="fe" data-prereq="matdisc,cirdig">
                             <div class="subject-name">Fundamentos de Eletricidade e Eletrônica</div>
                         </div>
                         <div class="subject" data-id="ing1" data-prereq="">
@@ -150,7 +151,7 @@
                         <div class="subject" data-id="calc2" data-prereq="calc1">
                             <div class="subject-name">Cálculo Diferencial e Integral II</div>
                         </div>
-                        <div class="subject" data-id="oo" data-prereq="alg2">
+                        <div class="subject" data-id="too" data-prereq="alg2">
                             <div class="subject-name">Tecnologia de Orientação a Objetos</div>
                         </div>
                         <div class="subject" data-id="bd1" data-prereq="">
@@ -158,6 +159,9 @@
                         </div>
                         <div class="subject" data-id="ing2" data-prereq="ing1">
                             <div class="subject-name">Leitura em Língua Inglesa</div>
+                        </div>
+                        <div class="subject" data-id="pcs1" data-prereq="">
+                            <div class="subject-name">Práticas Curriculares em Sociedade I</div>
                         </div>
                     </div>
                 </div>
@@ -169,19 +173,22 @@
                         <div class="subject" data-id="ed2" data-prereq="ed1">
                             <div class="subject-name">Estrutura de Dados II</div>
                         </div>
-                        <div class="subject" data-id="poo" data-prereq="oo">
+                        <div class="subject" data-id="lpoo" data-prereq="too,bd1">
                             <div class="subject-name">Linguagem de Programação Orientada a Objetos</div>
                         </div>
-                        <div class="subject" data-id="redes1" data-prereq="">
+                        <div class="subject" data-id="redes1" data-prereq="ihcc">
                             <div class="subject-name">Redes de Computadores I</div>
                         </div>
-                        <div class="subject" data-id="so1" data-prereq="arq2">
+                        <div class="subject" data-id="so1" data-prereq="">
                             <div class="subject-name">Sistemas Operacionais I</div>
                         </div>
                         <div class="subject" data-id="bd2" data-prereq="bd1">
                             <div class="subject-name">Banco de Dados II</div>
                         </div>
-                        <div class="subject" data-id="pcs2" data-prereq="">
+                        <div class="subject" data-id="aps" data-prereq="alg1">
+                            <div class="subject-name">Análise e Projeto de Sistemas</div>
+                        </div>
+                        <div class="subject" data-id="pcs2" data-prereq="pcs1">
                             <div class="subject-name">Práticas Curriculares em Sociedade II</div>
                         </div>
                     </div>
@@ -191,26 +198,28 @@
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-5-circle-fill"></i> Quinto Semestre</div>
                     <div class="subjects">
-                        <div class="subject" data-id="aps" data-prereq="poo,bd2">
-                            <div class="subject-name">Análise e Projeto de Sistemas</div>
-                        </div>
+                        
                         <div class="subject" data-id="ed3" data-prereq="ed2">
                             <div class="subject-name">Estrutura de Dados III</div>
                         </div>
-                        <div class="subject" data-id="pweb" data-prereq="poo,bd2">
+                        <div class="subject" data-id="pweb" data-prereq="lpoo">
                             <div class="subject-name">Programação para WEB</div>
                         </div>
                         <div class="subject" data-id="redes2" data-prereq="redes1">
                             <div class="subject-name">Redes de Computadores II</div>
                         </div>
-                        <div class="subject" data-id="so2" data-prereq="so1">
+                        <div class="subject" data-id="so2" data-prereq="so1,too">
                             <div class="subject-name">Sistemas Operacionais II</div>
                         </div>
-                        <div class="subject" data-id="tcomp" data-prereq="ed2">
+                        <div class="subject" data-id="tcomp" data-prereq="ed1,matdisc">
                             <div class="subject-name">Teoria da Computação</div>
                         </div>
-                        <div class="subject" data-id="alg" data-prereq="calc2,matdisc">
+                        
+                        <div class="subject" data-id="alga" data-prereq="">
                             <div class="subject-name">Álgebra Linear e Geometria Analítica</div>
+                        </div>
+                        <div class="subject" data-id="pcs3" data-prereq="pcs2">
+                            <div class="subject-name">Práticas Curriculares em Sociedade III</div>
                         </div>
                     </div>
                 </div>
@@ -219,24 +228,30 @@
                 <div class="semester">
                     <div class="semester-title"><i class="bi bi-6-circle-fill"></i> Sexto Semestre</div>
                     <div class="subjects">
-                        <div class="subject" data-id="sd1" data-prereq="so2,redes2">
+                        <div class="subject" data-id="sd1" data-prereq="so2,redes1">
                             <div class="subject-name">Sistemas Distribuídos I</div>
                         </div>
-                        <div class="subject" data-id="ia" data-prereq="ed2,alg">
+                        <div class="subject" data-id="ia" data-prereq="ed3,tcomp">
                             <div class="subject-name">Inteligência Artificial</div>
                         </div>
-                        <div class="subject" data-id="seg" data-prereq="redes2">
-                            <div class="subject-name">Segurança de Redes de Computadores</div>
-                        </div>
-                        <div class="subject" data-id="aca" data-prereq="ed3">
+                         <div class="subject" data-id="aca" data-prereq="ed3,calc2">
                             <div class="subject-name">Análise e Complexidade de Algoritmos</div>
                         </div>
                         <div class="subject" data-id="mp" data-prereq="">
                             <div class="subject-name">Metodologia da Pesquisa</div>
                         </div>
-                        <div class="subject" data-id="cg" data-prereq="alg">
+                        <div class="subject" data-id="cg" data-prereq="alga,ed3">
                             <div class="subject-name">Computação Gráfica</div>
                         </div>
+
+                        <div class="subject" data-id="src" data-prereq="redes2">
+                            <div class="subject-name">Segurança de Redes de Computadores</div>
+                        </div>
+                       <div class="subject" data-id="pcs4" data-prereq="pcs3">
+                            <div class="subject-name">Práticas Curriculares em Sociedade IV</div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
 
@@ -247,20 +262,24 @@
                         <div class="subject" data-id="sd2" data-prereq="sd1">
                             <div class="subject-name">Sistemas Distribuídos II</div>
                         </div>
-                        <div class="subject" data-id="sweb" data-prereq="pweb">
+                        <div class="subject" data-id="sweb" data-prereq="pweb,sd1">
                             <div class="subject-name">Serviços WEB</div>
+                        </div>
+                        
+                        <div class="subject" data-id="comp" data-prereq="tcomp">
+                            <div class="subject-name">Compiladores</div>
                         </div>
                         <div class="subject" data-id="es" data-prereq="aps">
                             <div class="subject-name">Engenharia de Software</div>
                         </div>
-                        <div class="subject" data-id="comp" data-prereq="tcomp">
-                            <div class="subject-name">Compiladores</div>
-                        </div>
                         <div class="subject" data-id="estat" data-prereq="">
-                            <div class="subject-name">Estatística e Probabilidade</div>
+                            <div class="subject-name">Probabilidade e Estatística</div>
                         </div>
-                        <div class="subject" data-id="tcc1" data-prereq="mp">
+                        <div class="subject" data-id="tcc1" data-prereq="mp,pcs4,cg,src,aca,ia,sd1,pweb,aps,bd2,ing2,arq2,soct,port,cpw,fe">
                             <div class="subject-name">Trabalho de Conclusão I</div>
+                        </div>
+                        <div class="subject" data-id="pcs5" data-prereq="pcs4">
+                            <div class="subject-name">Práticas Curriculares em Sociedade V</div>
                         </div>
                     </div>
                 </div>
@@ -281,7 +300,7 @@
                         <div class="subject" data-id="elet4" data-prereq="">
                             <div class="subject-name">Eletiva IV</div>
                         </div>
-                        <div class="subject" data-id="gest" data-prereq="">
+                        <div class="subject" data-id="gest" data-prereq="alg2,soct,arq1,calc1,fe,ing1">
                             <div class="subject-name">Gestão Empresarial e Empreendedorismo</div>
                         </div>
                         <div class="subject" data-id="tcc2" data-prereq="tcc1">
@@ -294,6 +313,11 @@
                     <strong><i class="bi bi-star-fill"></i> Atividades Complementares</strong><br>
                     <small>200 horas ao longo do curso</small>
                 </div>
+                <div class="complementary">
+                    <strong><i class="bi bi-star-fill"></i>Carga Horária de disciplinas eletivas</strong><br>
+                    <small>Somatório das disciplinas eletivas I, II, III e IV: 255h</small>
+                </div>
+                
             </div>
         </section>
 
