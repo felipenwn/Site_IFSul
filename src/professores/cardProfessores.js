@@ -86,13 +86,13 @@ const API_URL = [
                             <h5>Tópicos de Interesse:</h5>
 
                             <p class="text-justify">${interesse || 'Não informado'}</p>
-
+                            
                             <div class="social-links">
 
+                                ${email ? `<a href="mailto:${email}" target="_blank" class="download-link"><i class="bi bi-envelope"></i> Email: </a>${email}`: ''}
+                                <p>
                                 ${curriculo ? `<a href="${curriculo}" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>` : ''}
-
-                                ${email ? `<a href="mailto:${email}" target="_blank" class="download-link"><i class="bi bi-envelope"></i> Email</a>` : ''}
-
+</p>
                             </div>
 
                         </div>
