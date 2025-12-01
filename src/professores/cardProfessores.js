@@ -88,10 +88,11 @@ const API_URL = [
                             <p class="text-justify">${interesse || 'Não informado'}</p>
 
                             <div class="social-links">
+               ${curriculo ? `<a href="${curriculo}" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>` : ''}
 
-                                ${curriculo ? `<a href="${curriculo}" target="_blank" class="download-link"><i class="bi bi-link-45deg"></i> Lattes</a>` : ''}
+<hr>
 
-                                ${email ? `<a href="mailto:${email}" target="_blank" class="download-link"><i class="bi bi-envelope"></i> Email</a>` : ''}
+                                ${email ? `<a href="mailto:${email}" target="_blank" class="download-link">  <i class="bi bi-envelope"></i> ${email}</a>` : ''}
 
                             </div>
 

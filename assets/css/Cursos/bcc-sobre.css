@@ -179,7 +179,30 @@ body {
     opacity: 0.7;
    filter: invert(23%) sepia(98%) saturate(588%) hue-rotate(169deg) brightness(87%) contrast(84%);
 }
+.info-texto {
+    display: flex;
+    flex-direction: column; /* Coloca um span em baixo do outro */
+    justify-content: center;
+}
 
+/* Estilo do Nome (para ficar igual à foto de referência) */
+.nome-prof {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Estilo do E-mail */
+.email-prof {
+    font-size: 0.9rem;
+    color: #6686A2!important;
+    word-break: break-all; /* Garante que o e-mail quebre linha em telas muito pequenas */
+}
+.bi-envelope {
+
+ color: #6686A2!important;
+}
 .card-conteudo span {
     color: #333;
     font-size: 16px;

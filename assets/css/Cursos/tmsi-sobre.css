@@ -133,19 +133,42 @@ body {
 
 .card-conteudo {
     display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 24px 24px 24px;
+    align-items: center; /* Centraliza verticalmente o ícone com o texto */
+    gap: 15px;           /* Espaço entre o ícone e o texto */
+    padding: 10px;       /* Um respiro interno */
 }
+
 
 .card-conteudo img {
     width: 28px;
     height: 28px;
     opacity: 0.7;
+    flex-shrink: 0; /* Garante que o ícone não "amasse" se a tela for pequena */
     filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(1068%) hue-rotate(122deg) brightness(92%) contrast(94%);
 }
+.info-texto {
+    display: flex;
+    flex-direction: column; /* Coloca um span em baixo do outro */
+    justify-content: center;
+}
 
-.card-conteudo span {
+/* Estilo do Nome (para ficar igual à foto de referência) */
+.nome-prof {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.2;
+}
+
+/* Estilo do E-mail */
+.email-prof {
+    font-size: 0.9rem;
+    color: #0e4b18d2 !important;
+    font-style: italic;
+    word-break: break-all; /* Garante que o e-mail quebre linha em telas muito pequenas */
+}
+
+.card-conteudo span,small {
     color: #333;
     font-size: 16px;
     font-weight: 600;
