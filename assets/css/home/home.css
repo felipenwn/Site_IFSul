@@ -4,6 +4,8 @@
     --ifsul-green-dark: #0f4428;
     --ifsul-gray: #f8f9fa;
     --text-dark: #212529;
+    --ifsul-red-dark: #910303;
+    --ifsul-blue-dark: #30709e;
 }
 
 * {
@@ -341,6 +343,14 @@ body {
 {
     text-decoration: underline!important;
     color: var(--ifsul-green-dark)!important;
+}
+.red a:hover{
+    text-decoration: underline!important;
+    color: var(--ifsul-red-dark)!important;
+}
+.blue a:hover{
+    text-decoration: underline!important;
+    color: var(--ifsul-blue-dark)!important;
 }
 
 .social-links a {
