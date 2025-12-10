@@ -16,7 +16,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-dark);
 }
-
+.ensino-image {
+        flex: 0 0 auto;
+        width: 40%!important;
+        margin: 0,0,0,0!important;
+    }
 .hero-section {
     background: linear-gradient(135deg, var(--ifsul-green-dark) 0%, var(--ifsul-green) 50%, var(--ifsul-green-light) 100%);
     min-height: 75vh;
@@ -102,7 +106,7 @@ body {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .section-title {
@@ -110,7 +114,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--ifsul-green);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .section-description {
@@ -172,7 +176,11 @@ body {
     font-weight: 600;
     margin-bottom: 15px;
 }
-
+.align-items-center{
+    display: flex;          
+  align-items: center;   
+  justify-content: center; 
+}
 .hero-image {
     position: relative;
     text-align: center;
@@ -353,6 +361,15 @@ body {
     box-shadow: 0 10px 20px rgba(26, 95, 58, 0.3);
     color: var(--ifsul-gray);
 }
+.carousel-caption {
+    background: rgba(26, 95, 58, 0.699);
+    padding: 15px 30px;
+    border-radius: 10px;
+    bottom: 40px;
+}
+
+
+
 
 @media (max-width: 768px) {
     .hero-title {

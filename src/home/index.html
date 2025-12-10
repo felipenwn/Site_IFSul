@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/IV.ico">
     <title>Inf - Portal da Informática - IFSul Câmpus Passo Fundo</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
@@ -53,8 +54,8 @@
                 </p>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <img src="../../assets/img/home.png" alt="Câmpus IFSul" class="campus-image">
+                <div class="col-lg-6 mb-4 mb-lg-0 ensino-image">
+                    <img src="../../assets/img/Places/alunos.jpg" alt="Câmpus IFSul" class="campus-image">
                 </div>
                 <div class="col-lg-6">
                     <h3 class="mb-4" style="color: var(--ifsul-green); font-weight: 700;">Excelência em Ensino</h3>
@@ -89,13 +90,16 @@
                             <span class="course-label">Curso Técnico</span>
                             <h3 class="course-title">Técnico em Manutenção e Suporte em Informática</h3>
                             <p class="course-description">
-                                O curso Técnico em Manutenção e Suporte em Informática do IFSul Campus Passo Fundo 
-foi implantado em 2007, com o objetivo de formar profissionais qualificados para o mercado de trabalho 
-nas áreas de informática.
- Tem como objetivo do curso é formar Técnicos de Manutenção e Suporte em Informática de nível médio, 
-na modalidade subsequente, com capacidade humanística, crítica, solidária aliadas a capacidade científica e tecnológica.
+                                O curso Técnico em Manutenção e Suporte em Informática do IFSul Campus Passo Fundo
+                                foi implantado em 2007, com o objetivo de formar profissionais qualificados para o
+                                mercado de trabalho
+                                nas áreas de informática.
+                                Tem como objetivo do curso é formar Técnicos de Manutenção e Suporte em Informática
+                                de nível médio,
+                                na modalidade subsequente, com capacidade humanística, crítica, solidária aliadas a
+                                capacidade científica e tecnológica.
                             </p>
-                            
+
                             <ul class="course-features">
                                 <li><i class="bi bi-check-circle-fill"></i> Duração: 1 ano e meio (3 semestres)</li>
                                 <li><i class="bi bi-clock-fill"></i> Turno: Noite</li>
@@ -148,22 +152,50 @@ na modalidade subsequente, com capacidade humanística, crítica, solidária 
             <div class="position-relative">
                 <!--a href="/eventos.html" class="gallery-btn">Ver Todos os Eventos</a-->
                 <div id="carouselArena" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselArena" data-bs-slide-to="0"
+                            class="active"></button>
+                        <button type="button" data-bs-target="#carouselArena" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselArena" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselArena" data-bs-slide-to="3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="../../assets/img/events/arenagames/arena-2.jpeg" class="d-block w-100"
-                                alt="Arena Games">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../assets/img/events/arenagames/arena-3.jpeg" class="d-block w-100"
-                                alt="Arena Games">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../../assets/img/events/arenagames/arena-4.jpeg" class="d-block w-100"
-                                alt="Arena Games">
-                        </div>
-                        <div class="carousel-item">
                             <img src="../../assets/img/events/arenagames/arena-5.jpeg" class="d-block w-100"
                                 alt="Arena Games">
+                            <div class="carousel-caption">
+                                <h5>Arena Games</h5>
+                                <p>Torneio de jogos realizado no campus IFSul Passo-Fundo</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../../assets/img/events/congresso/congresso-3.jpeg" class="d-block w-100"
+                                alt="Congresso de Tecnologia">
+                            <div class="carousel-caption">
+                                <h5>Esquenta IV Congresso TI</h5>
+                                <p>Preparação para o IV Congresso de Tecnologia da Informação.</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="carousel-item">
+                            <img src="../../assets/img/events/congresso/congresso-2.jpeg" class="d-block w-100"
+                                alt="Congresso de Tecnologia">
+                            <div class="carousel-caption">
+                                <h5>Visita ao Hub-Aliança</h5>
+                                <p>Palestras ministradas no Hub-Aliança para os alunos do IFSul.</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="../../assets/img/events/congresso/congresso-1.jpeg" class="d-block w-100"
+                                alt="Congresso de Tecnologia">
+                            <div class="carousel-caption">
+                                <h5>Congresso de Tecnologia</h5>
+                                <p>Evento anual que reúne especialistas em tecnologia da informação.</p>
+                            </div>
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselArena"
@@ -179,65 +211,68 @@ na modalidade subsequente, com capacidade humanística, crítica, solidária 
         </div>
     </section>
 
+
+
+
     <section class="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
                     <a href="https://passofundo.ifsul.edu.br/" target="_blank" style="text-decoration: none;">
-                    <div class="contact-card text-center">
-                        <img src="../../assets/img/logo.png" alt="Logo IFSul" class="contact-logo">
+                        <div class="contact-card text-center">
+                            <img src="../../assets/img/logo.png" alt="Logo IFSul" class="contact-logo">
 
                             <h4> Instituto Federal
                                 Sul-rio-grandense</h4>
-                        </a>
-                        <br>
+                    </a>
+                    <br>
 
-                        <li class="contact-info">
-                            <i class="bi bi-people-fill"></i>
-                            <a href="../Equipe/index.html" style="text-decoration: none; color: #666;">Equipe
-                                de desenvolvimento</a>
+                    <li class="contact-info">
+                        <i class="bi bi-people-fill"></i>
+                        <a href="../Equipe/index.html" style="text-decoration: none; color: #666;">Equipe
+                            de desenvolvimento</a>
+                    </li>
+                </div>
+
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="contact-card">
+                    <h4 style="color: var(--ifsul-green); font-weight: 700; margin-bottom: 20px;">Links Úteis</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="bi bi-calendar3"></i>
+                            <a href="../Calendario/calendario.html"
+                                style="text-decoration: none; color: #666;">Calendário Acadêmico</a>
                         </li>
-                    </div>
-
+                        <li>
+                            <i class="bi bi-arrow-left-right"></i>
+                            <a href="../bcc_organograma/index.html"
+                                style="text-decoration: none; color: #666;">Matriz-Pré-Requisito BCC</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-arrow-left-right"></i>
+                            <a href="../tmsi_organograma/index.html"
+                                style="text-decoration: none; color: #666;">Matriz-Pré-Requisito TMSI</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="contact-card">
-                        <h4 style="color: var(--ifsul-green); font-weight: 700; margin-bottom: 20px;">Links Úteis</h4>
-                        <ul class="contact-info">
-                            <li>
-                                <i class="bi bi-calendar3"></i>
-                                <a href="../Calendario/calendario.html"
-                                    style="text-decoration: none; color: #666;">Calendário Acadêmico</a>
-                            </li>
-                            <li>
-                                <i class="bi bi-arrow-left-right"></i>
-                                <a href="../bcc_organograma/index.html"
-                                    style="text-decoration: none; color: #666;">Matriz-Pré-Requisito BCC</a>
-                            </li>
-                            <li>
-                                <i class="bi bi-arrow-left-right"></i>
-                                <a href="../tmsi_organograma/index.html"
-                                    style="text-decoration: none; color: #666;">Matriz-Pré-Requisito TMSI</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-card">
-                        <h4 style="color: var(--ifsul-green); font-weight: 700; margin-bottom: 20px;">Contato</h4>
-                        <ul class="contact-info">
-                            <li><i class="bi bi-geo-alt-fill"></i> Est. Perimetral Leste, 150. Passo Fundo - RS</li>
-                            <li><i class="bi bi-envelope-fill"></i> pf-corac@ifsul.edu.br</li>
-                            <li><i class="bi bi-telephone-fill"></i> (54) 2024-0400</li>
-                        </ul>
-                        <div class="social-links">
-                            <a href="https://w.app/ucjrtt" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/computacao_ifsulpf/" target="_blank"><i
-                                    class="bi bi-instagram"></i></a>
-                        </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-card">
+                    <h4 style="color: var(--ifsul-green); font-weight: 700; margin-bottom: 20px;">Contato</h4>
+                    <ul class="contact-info">
+                        <li><i class="bi bi-geo-alt-fill"></i> Est. Perimetral Leste, 150. Passo Fundo - RS</li>
+                        <li><i class="bi bi-envelope-fill"></i> pf-corac@ifsul.edu.br</li>
+                        <li><i class="bi bi-telephone-fill"></i> (54) 2024-0400</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://w.app/ucjrtt" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/computacao_ifsulpf/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
