@@ -156,8 +156,8 @@ hr.my-4 {
 }
 .head-container{
     display: flex;
-    justify-content: space-between; /* Empurra um para esq. e outro para dir. */
-    align-items: center; /* Centraliza verticalmente (o botão fica no meio do texto) */
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -246,11 +246,10 @@ section.secaoteste
         font-size: 1rem;
     }
 
-    .card-container {
-        height: 300px;
-        margin-bottom: 1.5rem;
-    }
-
+.card-container {
+    height: 340px; 
+    margin-bottom: 1.5rem;
+  }
     .event-title {
         font-size: 1rem;
     }
@@ -280,9 +279,26 @@ section.secaoteste
         font-size: 1.5rem;
     }
 
-    .card-container {
-        height: 320px;
-    }
+.card-container {
+   
+    height: 400px; 
+  }
+ 
+  .card-front .event-card {
+    padding: 1rem; 
+  }
+
+ 
+  .text-justify {
+    font-size: 0.85rem; 
+    line-height: 1.4;
+  }
+  
+ 
+  .event-title {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+  }
 
     .download-link {
         padding: 0.8rem 1.5rem;

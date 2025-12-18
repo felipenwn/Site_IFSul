@@ -235,8 +235,8 @@ a.name {
     font-size: 1rem;
   }
 
-  .card-container {
-    height: 300px;
+.card-container {
+    height: 340px; 
     margin-bottom: 1.5rem;
   }
 
@@ -270,7 +270,20 @@ a.name {
   }
 
   .card-container {
-    height: 320px;
+   height: 400px;
+  }
+  .card-front .event-card {
+    padding: 1rem; 
+  }
+  .text-justify {
+    font-size: 0.85rem; 
+    line-height: 1.4;
+  }
+  
+ 
+  .event-title {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
   }
 
   .download-link {
@@ -300,3 +313,4 @@ a.name {
   border-radius: 20px;
 
 }
+
