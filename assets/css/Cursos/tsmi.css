@@ -235,7 +235,7 @@ section.secaoteste
   
   @media (max-width: 768px) {
     #time {
-        padding: 2rem 0;
+        padding: 1.5rem;
     }
 
     .section-title {
@@ -275,6 +275,9 @@ section.secaoteste
 }
 
 @media (max-width: 576px) {
+    #time .container {
+    padding: 1rem; 
+  }
     .section-title {
         font-size: 1.5rem;
     }
