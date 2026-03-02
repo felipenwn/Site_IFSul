@@ -247,7 +247,8 @@ section.secaoteste
     }
 
 .card-container {
-    height: 340px; 
+   min-height: 340px;
+   height: auto;
     margin-bottom: 1.5rem;
   }
     .event-title {
@@ -284,7 +285,8 @@ section.secaoteste
 
 .card-container {
    
-    height: 400px; 
+    min-height: 400px;
+    height: auto;
   }
  
   .card-front .event-card {
