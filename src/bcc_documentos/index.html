@@ -52,157 +52,311 @@
 
             <div class="container">
                 <h2 class="section-title">Documentos do curso</h2>
-                <p class="section-description mb-5">Abaixo estão os documentos relacionados ao curso de Ciência da
-                    Computação do IFSul - Câmpus Passo Fundo.
-                    Clique nos links para baixar os arquivos.</p>
+                <p class="section-description mb-5">Abaixo estão os documentos relacionados às disciplina de TCC e
+                    documentos gerais do curso de <b>Ciência da Computação do IFSul - Câmpus Passo Fundo.</b> Utilize o
+                    menu de navegação abaixo para alternar entre as categorias.</p>
                 <hr class="my-4">
-                <div class="container">
 
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="card-container">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="event-card text-center">
-                                            <h4 class="event-title mb-2">Projeto Político Pedagógico (Matriz 2023)</h4>
-                                            <p class="mb-2 text-justify text-monospace">
-                                                Este documento apresenta o Projeto Político Pedagógico do Curso de
-                                                Ciência da Computação do
-                                                IFSul - Câmpus Passo Fundo.
+
+                <!-- Navegação por Abas -->
+                <ul class="nav nav-pills mb-4 justify-content-center flex-wrap" id="docTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="sem1-tab" data-bs-toggle="pill" data-bs-target="#curso"
+                            type="button" role="tab">Curso</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sem2-tab" data-bs-toggle="pill" data-bs-target="#tcc" type="button"
+                            role="tab">TCC</button>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="docTabsContent">
+                    <!-- CURSO -->
+
+                    <div class="tab-pane fade show active" id="curso" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Projeto Político Pedagógico (Matriz 2023)
+                                                </h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta o Projeto Político Pedagógico do Curso de
+                                                    Ciência da Computação do
+                                                    IFSul - Câmpus Passo Fundo.
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card-back">
-                                        <a href="../../assets/docs/bcc/projeto_pedagogico_bcc.pdf"
-                                            class="btn-secondary download-link">
-                                            <i class="mb-2 bi bi-download"></i>
-                                            <h5>Baixe o Arquivo!</h5>
-                                        </a>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/projeto_pedagogico_bcc.pdf"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
 
-                        <div class="col-md-4">
-                            <div class="card-container">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="event-card text-center">
-                                            <h4 class="event-title mb-2">Regulamento Curricularização Extensão e
-                                                Pesquisa</h4>
-                                            <p class="mb-2 text-justify text-monospace">
-                                                Este documento apresenta o Regulamento Curricularização Extensão e
-                                                Pesquisa do Curso de Ciência da Computação do
-                                                IFSul - Câmpus Passo Fundo.
-                                            </p>
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Regulamento Curricularização Extensão e
+                                                    Pesquisa</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta o Regulamento Curricularização Extensão e
+                                                    Pesquisa do Curso de Ciência da Computação do
+                                                    IFSul - Câmpus Passo Fundo.
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card-back">
-                                        <a href="../../assets/docs/bcc/regulamento_curricularizacao.pdf"
-                                            class="btn-secondary download-link">
-                                            <i class="mb-2 bi bi-download"></i>
-                                            <h5>Baixe o Arquivo!</h5>
-                                        </a>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/regulamento_curricularizacao.pdf"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <div class="card-container">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="event-card text-center">
-                                            <h4 class="event-title mb-2">Regulamento Atividades Complementares</h4>
-                                            <p class="mb-2 text-justify text-monospace">
-                                                Este documento apresenta o Regulamento Atividades Complementares do
-                                                Curso de Ciência da Computação do
-                                                IFSul - Câmpus Passo Fundo.<br>
-                                                <span style="color: red;">Atualização conforme aprovado em Colegiado em 29 de outubro de 2025 e homologado pela Câmara de Ensino em 11 de dezembro de 2025.</span>
-                                            </p>
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Regulamento Atividades Complementares</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta o Regulamento Atividades Complementares do
+                                                    Curso de Ciência da Computação do
+                                                    IFSul - Câmpus Passo Fundo.<br>
+                                                    <span style="color: red;">Atualização conforme aprovado em Colegiado
+                                                        em 29 de outubro de 2025 e homologado pela Câmara de Ensino em
+                                                        11 de dezembro de 2025.</span>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card-back">
-                                        <a href="../../assets/docs/bcc/regulamento_at_complementares_bcc_2025.pdf"
-                                            class="btn-secondary download-link">
-                                            <i class="mb-2 bi bi-download"></i>
-                                            <h5>Baixe o Arquivo!</h5>
-                                        </a>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/regulamento_at_complementares_bcc_2025.pdf"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <div class="card-container">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="event-card text-center">
-                                            <h4 class="event-title mb-2">Regulamento TCC</h4>
-                                            <p class="mb-2 text-justify text-monospace">
-                                                Este documento apresenta o Regulamento TCC do Curso de Ciência da
-                                                Computação do IFSul - Câmpus Passo Fundo.
-                                            </p>
+
+
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Organização Didática IFSUL</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta a Organização Didática do IFSul - Câmpus
+                                                    Passo Fundo.
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card-back">
-                                        <a href="../../assets/docs/bcc/regulamento_tcc_bcc.pdf"
-                                            class="btn-secondary download-link">
-                                            <i class="mb-2 bi bi-download"></i>
-                                            <h5>Baixe o Arquivo!</h5>
-                                        </a>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/organizacao_didatica_bcc.pdf"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <div class="card-container">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="event-card text-center">
-                                            <h4 class="event-title mb-2">Organização Didática IFSUL</h4>
-                                            <p class="mb-2 text-justify text-monospace">
-                                                Este documento apresenta a Organização Didática do IFSul - Câmpus Passo Fundo.
-                                            </p>
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Instrução Normativa para a Educação à
+                                                    Distancia
+                                                    no IFSUL</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta a Instrução Normativa para a Educação à
+                                                    Distancia
+                                                    no IFSUL - Câmpus Passo Fundo.
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="card-back">
-                                        <a href="../../assets/docs/bcc/organizacao_didatica_bcc.pdf"
-                                            class="btn-secondary download-link">
-                                            <i class="mb-2 bi bi-download"></i>
-                                            <h5>Baixe o Arquivo!</h5>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="card-container">
-                                <div class="card-inner">
-                                    <div class="card-front">
-                                        <div class="event-card text-center">
-                                            <h4 class="event-title mb-2">Instrução Normativa para a Educação à Distancia
-                                                no IFSUL</h4>
-                                            <p class="mb-2 text-justify text-monospace">
-                                                Este documento apresenta a Instrução Normativa para a Educação à Distancia
-                                                no IFSUL - Câmpus Passo Fundo.
-                                            </p>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/instrucao_normativa.pdf"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
                                         </div>
-                                    </div>
-                                    <div class="card-back">
-                                        <a href="../../assets/docs/bcc/instrucao_normativa.pdf"
-                                            class="btn-secondary download-link">
-                                            <i class="mb-2 bi bi-download"></i>
-                                            <h5>Baixe o Arquivo!</h5>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- TCC -->
+
+
+                    <div class="tab-pane fade" id="tcc" role="tabpanel">
+
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Regulamento TCC</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta o Regulamento TCC do Curso de Ciência da
+                                                    Computação do IFSul - Câmpus Passo Fundo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/docsTCCS/regulamento_tcc_bcc.pdf"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Modelo Resumo TCC</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta o Modelo de Resumo para o TCC-I do Curso de
+                                                    Ciência da Computação do IFSul - Câmpus Passo Fundo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/docsTCCS/modelo_resumo_tcc_i.pdf"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Modelo TCC-I Latex(Overleaf)</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Acesse o link abaixo para visualizar o Modelo de TCC-I em Latex
+                                                    (Overleaf) do Curso de
+                                                    Ciência da Computação do IFSul - Câmpus Passo Fundo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <a href="https://www.overleaf.com/read/dmwckvqjvjkk?authuser=0#13414d"
+                                                target="_blank" class="btn-secondary download-link">
+                                                <i class="bi bi-link-45deg"></i>
+                                                <h5>Acesse o link!</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Modelo TCC-II Latex(Overleaf)</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Acesse o link abaixo para visualizar o Modelo de TCC-II em Latex
+                                                    (Overleaf) do Curso de
+                                                    Ciência da Computação do IFSul - Câmpus Passo Fundo.
+                                                </p>
+                                                <div class="alert alert-warning mt-3 mb-0 p-2 text-start" role="alert"
+                                                    style="font-size: 0.85rem; line-height: 1.4;">
+                                                    <strong><i class="bi bi-exclamation-triangle-fill"></i>
+                                                        Importante:</strong>
+                                                    Para usar os formatos ABNT e Monografia, abra o link, clique em
+                                                    <b>Menu</b> (no canto superior esquerdo do Overleaf) e selecione
+                                                    <b>"Copy Project"</b> para salvar e editar na sua conta.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <a href="https://www.overleaf.com/read/njytjfvvnhwh#afefdb" target="_blank"
+                                                class="btn-secondary download-link">
+                                                <i class="bi bi-link-45deg"></i>
+                                                <h5>Formato ABNT!</h5>
+                                            </a>
+                                            <a href="https://pt.overleaf.com/latex/templates/sbc-conferences-template/blbxwjwzdngr"
+                                                target="_blank" class="btn-secondary download-link">
+                                                <i class="bi bi-link-45deg"></i>
+                                                <h5>Formato SBC!</h5>
+                                            </a>
+                                            <a href="https://www.overleaf.com/read/bqpbpwrxtsbk#6d425e" target="_blank"
+                                                class="btn-secondary download-link">
+                                                <i class="bi bi-link-45deg"></i>
+                                                <h5> Monografia!</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card-container">
+                                    <div class="card-inner">
+                                        <div class="card-front">
+                                            <div class="event-card text-center">
+                                                <h4 class="event-title mb-2">Autorização para Divulgação do TCC</h4>
+                                                <p class="mb-2 text-justify text-monospace">
+                                                    Este documento apresenta o Modelo de Autorização para Divulgação do
+                                                    TCC do Curso de
+                                                    Ciência da Computação do IFSul - Câmpus Passo Fundo.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="card-back">
+                                            <a href="../../assets/docs/bcc/docsTCCS/"
+                                                class="btn-secondary download-link">
+                                                <i class="mb-2 bi bi-download"></i>
+                                                <h5>Baixe o Arquivo!</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
             </div>
 

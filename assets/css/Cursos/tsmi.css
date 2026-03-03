@@ -235,7 +235,7 @@ section.secaoteste
   
   @media (max-width: 768px) {
     #time {
-        padding: 2rem 0;
+        padding: 1.5rem;
     }
 
     .section-title {
@@ -247,7 +247,8 @@ section.secaoteste
     }
 
 .card-container {
-    height: 340px; 
+   min-height: 340px;
+   height: auto;
     margin-bottom: 1.5rem;
   }
     .event-title {
@@ -275,13 +276,17 @@ section.secaoteste
 }
 
 @media (max-width: 576px) {
+    #time .container {
+    padding: 1rem; 
+  }
     .section-title {
         font-size: 1.5rem;
     }
 
 .card-container {
    
-    height: 400px; 
+    min-height: 400px;
+    height: auto;
   }
  
   .card-front .event-card {
